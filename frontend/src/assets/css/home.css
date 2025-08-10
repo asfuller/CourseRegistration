@@ -1,0 +1,39 @@
+.heroContainer {
+    display: flex;
+    flex-direction: row !important;
+    height: 80vh;
+}
+
+.heroContainer .heroText {
+    margin-left: 15px;
+}
+
+.heroContainer .heroSubTitle {
+    font-size: 18px;
+}
+
+.heroContainer .heroTitle {
+    font-size: 50px;
+}
+
+.heroContainer .heroContent {
+    font-size: 35px;
+}
+
+.heroContainer .heroImage {
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.getStarted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.primaryButn {
+    font-size: 30px;
+}

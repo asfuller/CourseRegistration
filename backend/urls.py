@@ -20,9 +20,11 @@ Including another URLconf
 # This area hanles prefixes, while the other apps handle the suffixes
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("courseRegistration.urls")) #connects all of my urls to the courseRegistartion app
+    #path("", include("courseRegistration.urls")) #connects all of my urls to the courseRegistartion app
+    path('', TemplateView.as_view(template_name='index.html')) # connects to React index.html in the build file
 ]
